@@ -1,0 +1,84 @@
+<!-- 요금표 -->
+<section id="pricing" class="pricing" aria-label="요금표 및 추천 플랜">
+  <h2 style="font-size:18px;margin:0 0 8px">요금표</h2>
+  <p style="color:var(--muted); margin:0 0 12px">추천 플랜을 우선 표시합니다.</p>
+  <table aria-label="요금표">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>월 구독료</th>
+        <th>주요 혜택</th>
+        <th>추천 대상</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="highlight" style="padding:4px 8px; border-radius:6px; background:#e9efff">커피 플랜</span></td>
+        <td>4,900원</td>
+        <td>아메리카노 매일 1잔 40% 할인</td>
+        <td>매일 커피 마시는 통학러</td>
+      </tr>
+      <tr>
+        <td>도시락 플랜</td>
+        <td>3,900원</td>
+        <td>도시락·샌드위치 매일 1개 20% 할인</td>
+        <td>점심을 편의점에서 해결</td>
+      </tr>
+      <tr>
+        <td>복합 플랜</td>
+        <td>6,500원</td>
+        <td>커피+도시락 조합 할인</td>
+        <td>2종 모두 이용하는 경우</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq" aria-label="자주 묻는 질문">
+  <h2 style="font-size:18px;margin:0 0 8px">FAQ</h2>
+
+  <div class="faq-item" data-index="1">
+    <div class="faq-header" onclick="toggleFaq(this)">
+      <span class="q">무료 체험은 어떻게 진행되나요?</span>
+      <span class="icon" aria-hidden="true">›</span>
+    </div>
+    <div class="faq-content" aria-label="FAQ 1 내용">
+      일반 가입 후 무료 체험 기간 동안 모든 혜택을 체험할 수 있으며, 기간 종료 시 자동 결제은 발생하지 않습니다.
+    </div>
+  </div>
+
+  <div class="faq-item" data-index="2">
+    <div class="faq-header" onclick="toggleFaq(this)">
+      <span class="q">취소 방법은 어떻게 하나요?</span>
+      <span class="icon" aria-hidden="true">›</span>
+    </div>
+    <div class="faq-content" aria-label="FAQ 2 내용">
+      앱에서 구독 취소 버튼을 눌러 즉시 해지되며, 남은 기간은 정상 혜택이 적용됩니다.
+    </div>
+  </div>
+
+  <div class="faq-item" data-index="3">
+    <div class="faq-header" onclick="toggleFaq(this)">
+      <span class="q">혜택은 어디에서 사용할 수 있나요?</span>
+      <span class="icon" aria-hidden="true">›</span>
+    </div>
+    <div class="faq-content" aria-label="FAQ 3 내용">
+      제휴 편의점의 해당 지역 매장에서 적용되며, 앱의 바코드로 결제합니다.
+    </div>
+  </div>
+</section>
+
+<!-- 신청 버튼 및 안내 영역 -->
+<section aria-label="신청 영역" class="apply-area" id="applyArea" style="display:block;">
+  <button class="btn primary" id="registerBtn" onclick="showApplicant()">무료 체험 신청</button>
+  <p id="applyNote" style="margin:8px 0 0; color:#374151; font-size:13px;">
+    무료 체험 신청 시, 간단한 정보 입력 후 데모 안내가 노출됩니다.
+  </p>
+  <div id="demoPanel" class="" style="margin-top:12px; padding:12px; border-radius:8px; background:#eef2ff; border:1px solid #dbe4ff; display:none;">
+    <strong>신청 접수(데모) 안내</strong>
+    <p style="margin:6px 0 0; font-size:14px; color:#374151;">
+      데모 신청이 접수되었습니다. 곧 안내 메일 또는 화면 알림으로 데모 접수 확인을 드립니다.
+    </p>
+  </div>
+</section>
